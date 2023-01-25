@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="loader.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <h1 class="title">Tipos de botão</h1>
+      <span class="subtitle">
+        Dentro de um layout, botões servem para destacar ações importantes a
+        serem tomadas. Acompanhe abaixo um exemplo de tipos e propriedades.
+      </span>
+
+      <header>
+        <div>
+          <span>Botão Primário</span>
+          <span>Botão Secundário</span>
+          <span>Botão Terciário</span>
+          <span>Cursor</span>
+        </div>
+      </header>
+      <div class="horizontal-container">
+        <aside>
+          <span>DEFAULT</span>
+          <span>HOVER</span>
+          <span>FOCUS</span>
+          <span>DISABLED</span>
+          <span>LOADING</span>
+          <span>MOVABLE</span>
+        </aside>
+        <div class="container">
+          <button class="default-primary">Default Primary</button>
+
+          <button class="default-primary hover-primary">Hover Primary</button>
+
+          <button class="default-primary focus">Default Primary</button>
+
+          <button class="default-primary" disabled>Default Primary</button>
+
+          <button class="default-primary loading">
+            <div class="lds-ring">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            Loading Primary
+          </button>
+
+          <button class="default-primary movable">
+            <img src="./assets/recorder.svg" alt="" />
+            Movable Primary
+          </button>
+        </div>
+
+        <div class="container">
+          <button class="default-secondary">Default Secondary</button>
+
+          <button class="default-secondary hover-secondary">
+            Hover Secondary
+          </button>
+
+          <button class="default-secondary focus">Default Secondary</button>
+
+          <button class="default-secondary" disabled>Default Secondary</button>
+
+          <button class="default-secondary loading">
+            <div class="lds-ring">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            Loading Secondary
+          </button>
+
+          <button class="default-secondary movable">
+            <img src="./assets/recorder.svg" alt="" />
+            Movable Secondary
+          </button>
+        </div>
+
+        <div class="container">
+          <button class="default-tertiary">Hover Tertiary</button>
+
+          <button class="default-tertiary">Default Tertiary</button>
+
+          <button class="default-tertiary focus">Hover Tertiary</button>
+
+          <button class="default-tertiary" disabled>Hover Tertiary</button>
+
+          <button class="default-tertiary loading">
+            <div class="lds-ring">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            Loading Tertiary
+          </button>
+
+          <button class="default-tertiary movable">
+            <img src="./assets/recorder.svg" alt="" />
+            Movable Tertiary
+          </button>
+        </div>
+
+        <div class="container">
+          <div class="cursor-container">
+            <img src="./assets/cursor-default.svg" alt="" />
+          </div>
+
+          <div class="cursor-container">
+            <img src="./assets/cursor-default.svg" alt="" />
+          </div>
+
+          <div class="cursor-container">
+            <img src="./assets/cursor-default.svg" alt="" />
+          </div>
+
+          <div class="cursor-container">
+            <img src="./assets/cursor-not-allowed.svg" alt="" />
+          </div>
+
+          <div class="cursor-container">
+            <img src="./assets/cursor-loading.svg" alt="" />
+          </div>
+
+          <div class="cursor-container">
+            <img src="./assets/cursor-movable.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="interact">
+      <div class="top">
+        <h1 class="title">Teste os botões</h1>
+
+        <spanc class="subtitle">
+          Interaja com os botões e observe a mudança de aparência e de cursores
+        </spanc>
+      </div>
+
+      <button class="interact-primary">Interaja Comigo</button>
+
+      <button class="default-secondary" disabled>Interaja Comigo</button>
+
+      <button class="default-tertiary movable">
+        <img src="./assets/recorder.svg" alt="" />
+        Movable Tertiary
+      </button>
+    </div>
+  </body>
+</html>

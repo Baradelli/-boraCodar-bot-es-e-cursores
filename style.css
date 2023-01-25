@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0b0911;
+}
+
+.title {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: #fff;
+
+  font-size: 2rem;
+}
+
+main {
+  padding: 100px 77px;
+}
+
+.subtitle {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: #fff;
+
+  font-size: 1.2rem;
+}
+
+button {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* width: 11rem;
+  height: 3rem; */
+
+  padding: 0.75rem 1.5rem;
+
+  border-radius: 50px;
+  border: 2px solid transparent;
+
+  gap: 0.5rem;
+
+  text-transform: uppercase;
+}
+
+/*
+* Default
+*/
+
+.default-primary {
+  background: #8257e5;
+}
+
+.default-secondary {
+  background: #3c3748;
+}
+
+.default-tertiary {
+  background: transparent;
+}
+
+/*
+* Hover
+*/
+
+.hover-primary {
+  background: #9674e5;
+}
+
+.hover-secondary {
+  background: #6a617f;
+}
+
+.hover-tertiary {
+}
+
+/*
+* Focus
+*/
+
+.focus {
+  border: 2px solid #fff;
+}
+
+/*
+* Disabled
+*/
+
+button:disabled {
+  filter: brightness(0.56);
+  cursor: not-allowed;
+}
+
+/*
+* Loading
+*/
+
+.loading {
+  cursor: progress;
+}
+
+/*
+* Movable
+*/
+
+.movable {
+  cursor: move;
+}
+
+/**/
+
+.cursor-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 44px;
+}
+
+.horizontal-container {
+  display: flex;
+  width: fit-content;
+
+  border-right: 4px solid #1c162c;
+  border-bottom: 4px solid #1c162c;
+
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.container {
+  padding: 2rem;
+
+  display: grid;
+
+  gap: 2rem;
+}
+
+aside {
+  background: #1c162c;
+
+  display: grid;
+  align-items: center;
+
+  padding-inline: 1rem;
+  padding-top: 2rem;
+}
+
+aside span {
+  font-size: 0.6875rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: #fff;
+
+  height: 2.75rem;
+}
+
+header {
+  background: #1c162c;
+
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+
+  padding-left: 5rem;
+  width: fit-content;
+
+  margin-top: 3rem;
+}
+
+header div {
+  display: flex;
+
+  padding: 1.5rem 1rem;
+  gap: 2rem;
+
+  border-right: 6px solid #1c162c;
+}
+
+header span {
+  font-size: 0.6875rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: #fff;
+
+  text-align: center;
+  text-transform: uppercase;
+  width: 15.625rem;
+}
+
+header span:last-child {
+  width: 3.125rem;
+}
+
+.interact {
+  position: fixed;
+  width: 406px;
+  background: #130f1e;
+  height: 100vh;
+  top: 0;
+  right: 0;
+
+  display: flex;
+  align-items: center;
+
+  flex-direction: column;
+
+  padding: 6.6875rem 2.75rem;
+}
+
+.top {
+  margin-bottom: 4rem;
+}
+
+.interact-primary {
+  background: #8257e5;
+}
+
+.interact-primary:hover {
+  background: #9674e5;
+}
+
+.interact-primary:focus {
+  border: 2px solid #fff;
+}
+
+.interact button {
+  width: 100%;
+  margin-bottom: 2rem;
+}
